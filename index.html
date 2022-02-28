@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Orchidoclaste</title>
+  <style>
+
+    @font-face {
+        font-family: "Esteban";
+        src: url("font/Esteban-Regular.ttf");
+        }
+
+    body {
+        font-family: Esteban, sans-serif;
+    }
+
+    header{
+      background: url(img/maskedwoman.jpeg);          
+      background-size: cover;
+      background-position: center;
+      min-height: 110vh;
+    }
+
+    .section {
+      padding-top: 4vh;
+      padding-bottom: 4vh;
+    }
+
+    .tabs .indicator {
+        background-color: #b71c1c;
+    }
+
+    .tabs .tab a:focus, .tabs .tab a:focus.active {
+        background: transparent;
+    }
+
+    @media screen and (max-width: 670px) {
+       header {
+           min-height: 500px;
+       }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+            <a href="#" class="brand-logo">Orchidoclaste</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down" id="sizenav">
+                <li><a href="#photos">Photographie</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small red darken-4" data-tooltip="Instragram">
+                    <i class="fab fa-instagram"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small red darken-4" data-tooltip="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small red darken-4" data-tooltip="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+            </ul>
+            <ul class="sidenav gray lighten-2" id="mobile-menu">
+                <li><a href="#">Photographie</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+  </header>
+
+  <!-- photo / grid -->
+
+  <section class="container section scrollspy" id="photos">
+    <div class="row">
+        <div class="col s12 l4">
+            <img src="img/treewoman.jpeg" alt="treewoman" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 offset-l1">
+            <h2 class="red-text text-darken-4">Le Moustique</h2>
+                <p>"C'est au moment où tu vois un moustique se poser sur tes testicules que tu te rends compte qu'il y a moyen de régler certains problèmes autrement que par la violence."</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 l4 push-l7 offset-l1">
+            <img src="img/backwomanredcarpet.jpeg" alt="backwomanredcarpet" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 pull-l5 right-align offset-l1">
+            <h2 class="red-text text-darken-4">Hercule</h2>
+                <p>"Si un matin, au crépuscule, tu as l'impression d'avoir 4 testicules ne te prends pas pour Hercules, c'est juste qu'on te bouscule..."</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 l4">
+            <img src="img/bathwoman.jpeg" alt="bathwoman" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 offset-l1">
+            <h2 class="red-text text-darken-4">L'amour</h2>
+                <p>"L'amour c'est regarder ensemble dans la même direction, comme la levrette."
+                </p>
+        </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+
+    <div class="parallax-container">
+      <div class="parallax">
+          <img src="img/shadowwoman.jpg" alt="shadowwoman" class="responsive-img">
+      </div>
+    </div>
+
+  <!-- services / tabs -->
+
+  <section class="container section scrollspy" id="services">
+      <div class="row">
+          <div class="col s12 l4">
+              <h3 class="red-text text-darken-4">Que sommes-nous ?</h3>
+              <p>Orchidoclaste est une association de passionnés de photographie et de poésie. Créée par Charles O’Rear en 1983, l'organisme n'a jamais connue de periode aussi prospère.</p>
+              <p>L'association propose des prestations telles que des séances de photographie et de poésie.
+              </p>
+          </div>
+        <div class="col s12 l6 offset-l2">
+            <ul class="tabs">
+                <li class="tab col s6">
+                    <a href="#photographie" class="red-text text-darken-4">Photographie</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#poesie" class="red-text text-darken-4">Poésie</a>
+                </li>
+            </ul>
+            <div class="col s12" id="photographie">
+                <p class="flow-text red-text text-darken-2">PHOTOGRAPHIE</p>
+                <p>La photographie est l'ensemble des techniques, des procédés et des matériels qui permettent d'enregistrer un sujet en image fixe.</p>
+                <p>Le terme désigne également la branche des arts graphiques qui utilise cette technique.</p>
+            </div>
+            <div class="col s12" id="poesie">
+                <p class="flow-text red-text text-darken-2">POÉSIE</p>
+                <p>La poésie est un genre littéraire très ancien, aux formes variées, écrites généralement en vers mais qui admettent aussi la prose, et qui privilégient l'expressivité de la forme, les mots disant plus qu'eux-mêmes par leur choix et leur agencement.</p>
+            </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- parallax -->
+
+  <div class="parallax-container">
+    <div class="parallax">
+        <img src="img/flowerwoman.jpeg" alt="teflowerwomanrre" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- contact form -->
+
+<section class="section container scrollspy" id="contact">
+    <div class="row">
+        <div class="col s12 l5">
+            <h2 class="red-text text-darken-4">Racontez nous</h2>
+            <p>Nous vous proposons ici de nous contacter</p>
+            <p>Pour réaliser des photographies ou retoucher des images, nous vous proposons diverses prestataires pour réaliser vos projets.</p>
+            <p>Orchidoclaste propose aussi des séances poétique sdans lesquelles vous pouvez retrouver le meilleur de l'analysique poétique</p>
+            <p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+            <form action="">
+                <div class="input-field">
+                    <i class="material-icons prefix red-text text-darken-4">email</i>
+                    <input type="email" id="email">
+                    <label for="email">Votre Adresse Postale Numérique</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix red-text text-darken-4">message</i>
+                    <textarea id="message"
+                    class="materialize-textarea"></textarea>
+                    <label for="message">Votre Message</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="date" class="datepicker">
+                    <label for="date">Date de la session...</label>
+                </div>
+                <div class="input-field">
+                    <p>Service requis...</p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Photographie</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Édition</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field center">
+                    <button class="btn red darken-4">Soumettre</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+  <!-- footer -->
+
+<footer class="page-footer grey darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h5>À propos de nous...</h5>
+                <p>Orchidoclaste exige le respect réciproque entre ses membres. L'association demeure bienveillante et constructive, dans le respect des gestes barrière.</p>
+                <p>Faites l'amour, pas la guerre.</p>
+            </div>
+            <div class="col s12 l4 offset-l2 center">
+                <h5>Connection</h5>
+                <ul>
+                    <li><a href="#" class="grey-text text-lighten-3"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright gray darken-4">
+        <div class="container center-align">&copy; 2022 Orchidoclaste</div>
+    </div>
+</footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+            disableWeekends: true
+        });
+        $('.tooltipped').tooltip()
+        $('.scrollspy').scrollSpy();
+    });
+  </script>
+</body>
+</html>
